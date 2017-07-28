@@ -1,0 +1,75 @@
+/*
+
+Table of Contents:
+
+1. Imports
+2. Layout
+3. Colors
+4. Typography 
+5. Miscellaneous
+
+*/
+/* -------------------------------------------------- */
+/* 1. Imports */
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700");
+/* -------------------------------------------------- */
+/* 2. Layout */
+/* Since this page is just one column, there isn't a robust grid. However, a grid will be
+necessary on multi-column pages. */
+#container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 48px 0;
+  /*background-color: gray;*/ }
+  @media only screen and (max-width: 480px) {
+    #container {
+      width: 90vw;
+      /*background-color: green;*/ } }
+  @media only screen and (min-width: 960px) {
+    #container {
+      width: 768px;
+      /*background-color: pink;*/ } }
+
+.row {
+  /*background-color: pink;*/
+  margin: 0 auto;
+  padding: 8px 0; }
+
+footer {
+  padding: 8px 0; }
+
+/* -------------------------------------------------- */
+/* 3. Colors */
+/* -------------------------------------------------- */
+/* 4. Typography */
+body {
+  font-family: 'Droid Serif', serif; }
+
+h1 {
+  font-size: 2.7993em; }
+
+p {
+  font-size: 1.05em;
+  line-height: 1.8375em; }
+
+.small-text {
+  font-size: 0.69983em;
+  color: rgba(13, 32, 28, 0.5); }
+
+a {
+  color: #399792;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: solid 2px; }
+  a:hover {
+    color: #2b726e; }
+  a:active {
+    color: #1d4d4a; }
+
+ul, li {
+  margin: .5em 0; }
+
+/* -------------------------------------------------- */
+/* 5. Miscellaneous */
+
+/*# sourceMappingURL=style.css.map */

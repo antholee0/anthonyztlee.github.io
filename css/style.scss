@@ -1,0 +1,113 @@
+/*
+
+Table of Contents:
+
+1. Imports
+2. Layout
+3. Colors
+4. Typography 
+5. Miscellaneous
+
+*/
+
+
+
+/* -------------------------------------------------- */
+
+
+/* 1. Imports */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700');
+
+
+/* -------------------------------------------------- */
+
+/* 2. Layout */
+/* Since this page is just one column, there isn't a robust grid. However, a grid will be
+necessary on multi-column pages. */
+
+#container {
+ 	width: 80vw;
+ 	margin: 0 auto;
+ 	padding: 48px 0;
+ 	/*background-color: gray;*/
+
+	@media only screen and (max-width: 480px) {
+ 		width: 90vw;
+    	/*background-color: green;*/
+ 	}
+
+ 	@media only screen and (min-width: 960px) {
+ 		width: 960px * .8;
+    	/*background-color: pink;*/
+ 	}
+ }
+
+.row {
+	/*background-color: pink;*/
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+footer {
+	padding: 8px 0;
+}
+/* -------------------------------------------------- */
+
+
+/* 3. Colors */
+
+$primary-color: rgba(13, 32, 28, 1);
+$secondary-color: rgba(13, 32, 28, .5);
+$accent-color: rgba(57, 151, 146, 1);
+
+
+/* -------------------------------------------------- */
+
+/* 4. Typography */
+
+body {
+	font-family: 'Droid Serif', serif;
+}
+
+$base-font-size: 1.05em;
+$font-size-ratio: 1.333;
+
+h1 {
+	font-size: $base-font-size * ($font-size-ratio * 2);
+}
+
+p {
+	font-size: $base-font-size;
+	line-height: $base-font-size * 1.75;
+}
+
+.small-text {
+	font-size: $base-font-size * ($font-size-ratio * .5);
+	color: $secondary-color;
+}
+
+a {
+	color: $accent-color;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: solid 2px;
+
+	&:hover {
+		color: darken($accent-color, 10%);
+	}
+
+	&:active {
+		color: darken($accent-color, 20%);
+	}
+}
+
+ul, li {
+	margin: .5em 0;
+}
+
+/* -------------------------------------------------- */
+
+/* 5. Miscellaneous */
+
+
+
